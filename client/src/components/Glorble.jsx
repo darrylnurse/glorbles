@@ -22,13 +22,13 @@ export default function Glorble ({ name, color, hat, shoes, glasses }) {
         >
         </div>
         <div
-            className={'glorble-horns absolute right-[-10%] top-0'}
-            style={{backgroundColor: color}}
+            className={'glorble-horn-left absolute right-0 top-0'}
+            style={{borderRight: `30px solid ${color}`}}
         >
         </div>
         <div
-            className={'glorble-horns absolute left-[-10%] top-0'}
-            style={{borderRight: color}}
+            className={'glorble-horn-right absolute left-0 top-0'}
+            style={{borderRight: `30px solid ${color}`}}
         >
         </div>
       </div>
