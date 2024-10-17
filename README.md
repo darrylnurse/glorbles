@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-[](https://github.com/darrylnurse/glorbles/blob/main/glorbles-v0.1.gif)
+![](https://github.com/darrylnurse/glorbles/blob/main/glorbles-v0.1.gif)
 
 ## Notes
 
