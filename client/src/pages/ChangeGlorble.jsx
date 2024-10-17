@@ -1,13 +1,12 @@
 import React from 'react'
-import '../App.css'
 
-const ViewCars = () => {
+const ChangeGlorble = () => {
     
     return (
         <div>
-            
+
         </div>
     )
 }
 
-export default ViewCars
+export default ChangeGlorble
