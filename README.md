@@ -37,6 +37,8 @@ Here's a walkthrough of implemented required features:
 
 ![](https://github.com/darrylnurse/glorbles/blob/main/glorbles-v0.1.gif)
 
+![](https://github.com/darrylnurse/glorbles/blob/main/glorbles-v1.gif)
+
 ## Notes
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
