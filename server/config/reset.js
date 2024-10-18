@@ -11,6 +11,7 @@ const createGlorblesTable = async () => {
             hat VARCHAR(255),
             shoes VARCHAR(255),
             glasses VARCHAR(255)
+            price BIGINT NOT NULL
         )
     `;
 

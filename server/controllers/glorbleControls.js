@@ -39,14 +39,14 @@ const getGlorbleById = async (request, response) => {
 
 const createGlorble = async (request, response) => {
   try {
-    const { name, color, hat, shoes, glasses } = request.body;
+    const { name, color, hat, shoes, glasses, price } = request.body;
 
     const insertQuery = `
-      INSERT INTO glorbles (name, color, hat, shoes, glasses)
-      VALUES ($1, $2, $3, $4, $5)
+      INSERT INTO glorbles (name, color, hat, shoes, glasses, price)
+      VALUES ($1, $2, $3, $4, $5, $6)
     `;
 
-    await pool.query(insertQuery, [name, color, hat, shoes, glasses]);
+    await pool.query(insertQuery, [name, color, hat, shoes, glasses, price]);
     response.status(201);
   } catch (error) {
     console.error('Error creating Glorble :( - ', error);
@@ -57,7 +57,7 @@ const createGlorble = async (request, response) => {
 }
 
 const changeGlorble = async (request, response) => {
-  const { name, color, hat, shoes, glasses } = request.body;
+  const { name, color, hat, shoes, glasses, price } = request.body;
   const id = parseInt(request.params.id);
 
   if (isNaN(id) || id <= 0) {
@@ -65,17 +65,18 @@ const changeGlorble = async (request, response) => {
   }
   try {
     const changeQuery = `
-    UPDATE events 
+    UPDATE glorbles
     SET 
         name = $1,
         color = $2,
         hat = $3,
         shoes = $4,
         glasses = $5,
-    WHERE id = $6
+        price = $6
+    WHERE id = $7
   `;
 
-    const results = await pool.query(changeQuery, [name, color, hat, shoes, glasses, id]);
+    const results = await pool.query(changeQuery, [name, color, hat, shoes, glasses, price, id]);
     response.status(200).json(results.rows[0]);
   } catch (error) {
     response.status(409).json({

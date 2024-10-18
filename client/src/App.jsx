@@ -33,9 +33,9 @@ const App = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='bg-[url(./assets/glorble-house.jpg)] bg-no-repeat bg-center bg-cover h-screen'>
-      <div className={'h-full w-full backdrop-blur-sm'}>
-        <nav className={'grid grid-cols-3 gap-9 px-9 h-[15%] items-center'}>
+    <div className='bg-[url(./assets/glorble-house.jpg)] bg-no-repeat bg-center bg-cover min-h-screen'>
+      <div className={' w-full backdrop-blur-sm'}>
+        <nav className={'grid grid-cols-3 gap-9 px-9 h-[15vh] items-center'}>
           <div className={'flex justify-start items-center'}>
             <button
                 className={'px-9 py-3 bg-purple-400 font-bold rounded-lg'}

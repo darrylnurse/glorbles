@@ -29,3 +29,29 @@
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
+
+.death {
+    animation-name: fadeDeath;
+    animation-duration: 2.75s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeDeath {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.glorble-move {
+    animation: move 4s linear infinite, waddle 0.25s linear infinite;
+}
+
+@keyframes move {
+    0% {left: -20%;}
+    100% {left: 100%;}
+}
+
+@keyframes waddle {
+    0% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
