@@ -132,7 +132,7 @@ const ChangeGlorble = () => {
                     ${glorble.price} Glorbucks
                 </div>
             </div>
-            <div className={"bg-purple-200 h-[55%] flex flex-col justify-start p-6 items-center"}>
+            <div className={"bg-[url(/src/assets/dark-wood-floor.jpg)] h-[55%] flex flex-col justify-start p-6 items-center"}>
                 <div>
                     <form className={'flex flex-col gap-5'}>
                         <div id={'name'} className={'flex flex-row gap-3'}>

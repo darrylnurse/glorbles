@@ -67,7 +67,7 @@ const CreateGlorble = () => {
         ['shades', 450],
         ['orange-visor', 714],
         ['cyclops', 97],
-        ['nerd',  3141592653589793238462643383279],
+        ['nerd',  314159265358979],
         ['doffy', 90447],
         ['kamina', 9696969696]
     ], []);
@@ -108,7 +108,7 @@ const CreateGlorble = () => {
                     ${glorble.price} Glorbucks
                 </div>
             </div>
-            <div className={"bg-purple-200 h-[55%] flex flex-col justify-start p-6 items-center"}>
+            <div className={"bg-[url(/src/assets/wood-floor.jpg)] h-[55%] flex flex-col justify-start p-6 items-center"}>
                 <div>
                     <form className={'flex flex-col gap-5'}>
                         <div id={'name'} className={'flex flex-row gap-3'}>
