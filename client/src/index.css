@@ -2,16 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --outline: 40%;
+}
+
 .glorble-body {
     height: 150px;
     width: 150px;
     border-radius: 100%;
 }
 
+.glorble-outline {
+    opacity: var(--outline);
+    background: radial-gradient(transparent, black)
+}
+
 .glorble-feet {
     width: 60px;
     height: 30px;
     border-radius: 10rem 10rem 0 0;
+}
+
+.glorble-feet-outline {
+    opacity: var(--outline);
+    background: radial-gradient(transparent, black)
 }
 
 .glorble-horn-right {
